@@ -5,15 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilo.css">
+    <script src="script.js" defer></script>
     <title>Jogo adivinhação</title>
 </head>
 <body>
     <div id="container-principal">
         <div class="container-interno-1">
-            <h1>Jogo de Adivinhação</h1>
-            <p>Informe um número</p>
-            <input type="number" min="1" max="5">
-            <button>Confirme o número escolhido</button>
+            <h1 class="mensagem-titulo">Jogo de Adivinhação</h1>
+            <p class="mensagem-paragrafo">Informe um número</p>
+            <input class="chute" type="number" min="1" max="5">
+            <button onclick="verificar_acerto()">Confirme o número escolhido</button>
         </div>
         <div class="container-interno-2">
             <img src="img/img-ilustracao.jpg" style="width: 300px; height: 400px;" alt="Imagem Ilustrativa Pokemon">
