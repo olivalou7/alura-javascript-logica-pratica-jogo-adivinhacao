@@ -33,7 +33,8 @@ body {
     text-align: center;
 }
 
-.container-interno-1 button {
+.container-interno-1 button,
+.container-interno-1 #reiniciar {
     padding: 20px;
     font-size: 16px;
     font-weight: 900;
@@ -42,6 +43,7 @@ body {
     cursor: pointer;
 }
 
-.container-interno-1 button:hover {
+.container-interno-1 button:hover,
+.container-interno-1 #reiniciar:hover {
     background-color: #FFB22C;
 }
