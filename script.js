@@ -1,4 +1,4 @@
-const maximo_numeros_jogo = 10;
+const maximo_numeros_jogo = 100;
 
 function gerar_numero_aleatorio() {
     return parseInt(Math.random() * maximo_numeros_jogo + 1);
@@ -30,7 +30,7 @@ function verificar_acerto() {
     let mensagem_vitoria = `Você conseguiu em ${quantidade_tentativas} ${palavra_tentativa}`;
 
     if (!validacao_entrada_usuario) {
-        alert("Informe um número de 1 a 10");
+        alert("Informe um número de 1 a " + maximo_numeros_jogo);
         return;
     } else {
         if (chute == numero_secreto) {
